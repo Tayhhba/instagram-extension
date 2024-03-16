@@ -1,0 +1,32 @@
+{
+"manifest_version": 3,
+"name": "Instagram Ads and Suggested Posts Hider",
+"version": "0.0.1",
+"description": "Hides ads and suggested posts from Instagram web.",
+"permissions": [ "tabs", "storage"],
+"host_permissions": ["*://www.instagram.com/*"],
+"background": {
+  "service_worker": "background.js"
+},
+"content_scripts": [
+    {
+      "matches": ["*://www.instagram.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "options_ui": {
+    "page": "options.html"
+  },
+"action": {
+  "default_icon": {
+    "16": "assets/images/icon.png",
+    "48": "assets/images/icon.png",
+    "128": "assets/images/icon.png"
+  }
+},
+"icons": {
+  "16": "assets/images/icon.png",
+  "48": "assets/images/icon.png",
+  "128": "assets/images/icon.png"
+}
+}

@@ -1,0 +1,43 @@
+
+.container {
+    background:url(https://raw.githubusercontent.com/hosseinghafouri/brightness-range-slider/main/images/city.jpg) no-repeat center;
+    background-size:cover;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+ }
+ .brightness-box {
+    width:400px;
+    height:60px;
+    font-size: 23px;
+    background:#f9f9f9;
+    border-radius:8px;
+    padding:0 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+ }
+ 
+ .brightness-box i {
+    margin:0 10px;
+ }
+ 
+ #range {
+    width:100%;
+    height:3px;
+    
+    /*tira a barra do input range*/
+    -webkit-appearance:none;
+    background:#003eff;
+    outline:none;
+ }
+ 
+ #range::-webkit-slider-thumb {
+    -webkit-appearance:none;
+    background:#003eff;
+    width:18px;
+    height:18px;
+    border-radius:50%; 
+    cursor:pointer;
+ }

@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Options</title>
+    <link rel="stylesheet" href="assets/css/bt.min.css">
+    <link rel="stylesheet" href="assets/css/options.css">
+</head>
+<body>
+    <script src="assets/js/fa.js"></script>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 col-lg-10 col-xl-8 mx-auto">
+            <h2 class="h3 mb-4 mt-4 fw-bold page-title text-dark">Settings</h2>
+            <div class="my-4">
+                <h5 class="mb-0 mt-5 text-dark">Instagram Content Settings</h5>
+                <p>Modify Your Instagram Feeds</p>
+                <hr class="my-4" />
+                <strong class="mb-0 text-dark">Posts</strong>
+                <p>Select Posts or Suggestions you want to see</p>
+                <div class="list-group mb-5 shadow">
+                    <div class="list-group-item">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <strong class="mb-0">Suggested People</strong>
+                                <p class="text-muted mb-0 para">Hide the suggested people (people you may want to follow)</p>
+                            </div>
+                            <div class="col-auto">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="suggestedPeople">
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <strong class="mb-0">Suggested Posts</strong>
+                                <p class="text-muted mb-0 para">Hide posts of the people you are not following</p>
+                            </div>
+                            <div class="col-auto">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="suggestedPosts">
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <strong class="mb-0">Sponsored Posts (Ads)</strong>
+                                <p class="text-muted mb-0 para">Hide the Sponsored Ads</p>
+                            </div>
+                            <div class="col-auto">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="sponsoredPosts">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-4"/>
+                <strong class="mb-0 text-dark">Sponsored Ads Block Brightness</strong>
+                <p>Please enable system alert you will get.</p>
+                <div class="list-group mb-5 shadow">
+                    <div class="list-group-item">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <strong class="mb-0">Brightness</strong>
+                                <div class="row">
+                                    <div class="col-10">
+                                        <input type="range" class="form-range" id="brightness" min="10" max="100" value="20">
+                                    </div>
+                                    <div class="col-2">
+                                        <i class="fa-solid fa-sun"></i>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-grid">
+                  <button type="button" id="apply" class="btn btn-dark">Apply Changes</button>
+                </div>   
+            </div>
+        </div>
+    </div>
+    
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bt.min.js"></script>
+    <script src="options.js"></script>
+</body>
+</html>
